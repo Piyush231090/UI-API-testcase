@@ -29,7 +29,7 @@ If any action fails (e.g., country selection or price validation), the test logs
 Error Handling:
 Basic error handling is implemented using try-catch blocks to ensure that tests fail gracefully and log errors.
 
-# API test
+# API Test
 # Project Overview
 This project focuses on automating API testing for submitting and retrieving orders using OAuth authentication. The project leverages Rest-Assured for API testing and covers:
 OAuth token generation for authentication.
