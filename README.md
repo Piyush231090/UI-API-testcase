@@ -4,9 +4,9 @@
 This project automates UI testing for a web application using Selenium WebDriver with Java. It tests specific user interactions, validates the correctness of data displayed on the UI, and checks for functionality like selecting a country and validating pricing information.
  # Prerequisites
 Before setting up the project, ensure that the following are installed on your machine:
-1) Java Development Kit (JDK) – Download from here.
-2) Apache Maven – Download from here.
-3) ChromeDriver – Download the version compatible with your Chrome browser from here.
+1) Java Development Kit (JDK)
+2) Apache Maven 
+3) ChromeDriver 
 4) IDE – You can use any Java IDE such as IntelliJ IDEA, Eclipse, or Visual Studio Code.
 5) Git – To clone the repository (optional if not cloned).
 # Running Tests in Java
@@ -29,3 +29,36 @@ If any action fails (e.g., country selection or price validation), the test logs
 Error Handling:
 Basic error handling is implemented using try-catch blocks to ensure that tests fail gracefully and log errors.
 
+# API test
+# Project Overview
+This project focuses on automating API testing for submitting and retrieving orders using OAuth authentication. The project leverages Rest-Assured for API testing and covers:
+OAuth token generation for authentication.
+Submitting orders to the backend.
+Retrieving a list of orders with and without pagination.
+
+# Prerequisites
+Ensure the following are installed:
+Java Development Kit (JDK) 
+Apache Maven 
+Git – To clone the repository (optional).
+API endpoint credentials – You will need the Client ID and Client Secret to generate the OAuth token.
+
+# Running API Tests
+Step 1: Generate OAuth Token
+Before making any API requests, you must generate an OAuth token. The token will be used for authenticating API requests.
+Run the OAuthTest to generate the token. This token will be automatically stored and used for subsequent API calls.
+Step 2: Submitting an Order
+You can submit an order using the OrderImpl.java class. 
+Step 3: Retrieving Orders List
+You can retrieve the list of orders with or without pagination. 
+
+# Test Case Overview
+1. OAuth Token Generation:
+This test generates an OAuth token using client credentials.
+The token is stored for future API requests to authenticate the client.
+2. Submit an Order:
+Submits an order using package details such as quantity, package ID, and description.
+The response from the server will confirm the order's success or failure.
+3. Retrieve Order List:
+Retrieves a list of orders.
+Optionally supports pagination to fetch orders in pages.
