@@ -1,4 +1,4 @@
-## airalo_coding_exercise
+## UI-API-testcase
 # UI Automation Test 
  # Project Overview
 This project automates UI testing for a web application using Selenium WebDriver with Java. It tests specific user interactions, validates the correctness of data displayed on the UI, and checks for functionality like selecting a country and validating pricing information.
